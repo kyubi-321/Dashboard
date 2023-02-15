@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+table{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+th,td{
+    text-align: left;
+    padding: 8px;
+}
+
+.btn{
+    background: red;
+    padding: 5px 10px;
+    color: white;
+}
+
+.btn:hover{
+    color: red;
+    background: white;
+    padding: 3px 8px;
+    border: 2px solid red;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 10px;
+    border-bottom: 2px solid black;
+}
+
+.c1{
+    position: fixed;
+    background: blue;
+    width: 20vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.c1 .c11{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c1 li{
+    font-size: 24px;
+    padding: 10px 40px;
+    
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+}
+
+.c1 li:hover{
+    background:white;
+    color: blue;
+
+}
+
+.container{
+    position: absolute;
+    right: 0;
+    width: 80vw;
+    height: 100vh;
+    background: grey;
+}
+
+.container .header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    height: 10vh;
+    display: flex;
+    background: white;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 black;
+
+}
+
+.container .header .nav{
+    display: flex;
+    align-items: center;
+    width: 90%;
+}
+
+.container .header .nav .search{
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+
+.container .header .nav .search button{
+    background: rgb(98, 22, 230);
+    width: 35px;
+    height: 35px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    padding: 2px;
+    
+}
+
+.container .header .nav .search button:hover{
+    color: white;
+    background: black;
+}
+
+.container .header .nav .search input[type=text]{
+    border: none;
+    background: rgb(224, 213, 213);
+    padding: 10px;
+    width: 50%;
+}
+
+.container .header .nav .user{
+    flex: 1;
+    
+}
+
+.container .content{
+    position: relative;
+    min-height: 90vh;
+    margin-top: 10vh;
+}
+
+.container .content .cards{
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container .content .cards .card{
+    background: white;
+    border-radius: 2px;
+    padding: 30px;
+    margin: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    
+}
+
+.container .content .cards .card:hover{
+    box-shadow: 0 4px 8px 0 black;
+
+}
+
+
+
+.container .content .cards .card:hover{
+    color: red;
+}
+
+.container .content .content-2{
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.container .content .content-2 .recent-payments{
+    min-height: 50vh;
+    flex: 5;
+    background: white;
+    margin: 0 25px 25px 25px;
+    box-shadow: 0 4px 8px 0 black;
+    flex-direction: column;
+
+}
+
+.container .content .content-2 .new-students{
+    flex: 2;
+    background: white;
+    min-height: 50vh;
+    margin: 0 25px;
+    box-shadow: 0 4px 8px 0 black;
+    flex-direction: column;
+}
+
